@@ -27,9 +27,9 @@ public class RegistrationFormTests {
         $("#firstName").setValue("Konstantin");
         $("#lastName").setValue("Konstatinopolski");
         $("#userEmail").setValue("test@mail.ru");
-        $("label[for='gender-radio-1']").click();
+        $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue("7991000000");
-        $("label[for='hobbies-checkbox-1']").click();
+        $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#uploadPicture").uploadFromClasspath("selenide-logo-big.png");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("June");
