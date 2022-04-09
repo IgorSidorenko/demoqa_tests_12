@@ -30,7 +30,7 @@ public class RegistrationFormTests {
         $("label[for='gender-radio-1']").click();
         $("#userNumber").setValue("7991000000");
         $("label[for='hobbies-checkbox-1']").click();
-        // $("#uploadPicture").uploadFromClasspath(".png");
+        $("#uploadPicture").uploadFromClasspath("selenide-logo-big.png");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("June");
         $(".react-datepicker__year-select").selectOption("1995");
@@ -46,7 +46,7 @@ public class RegistrationFormTests {
 
         $("[class=modal-open]").shouldHave(text("Konstantin"), text("Konstatinopolski"),
                 text("test@mail.ru"), text("Male"), text("7991000000"),
-                text("25 June,1995"), text("Sports"), text("Computer science"), text("Baumana 10"), text("NCR Delhi"));
+                text("25 June,1995"), text("Sports"), text("selenide-logo-big"), text("Computer science"), text("Baumana 10"), text("NCR Delhi"));
 
 
     }
