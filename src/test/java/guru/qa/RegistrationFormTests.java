@@ -35,7 +35,7 @@ public class RegistrationFormTests {
         $(".react-datepicker__month-select").selectOption("June");
         $(".react-datepicker__year-select").selectOption("1995");
         $("div[aria-label='Choose Sunday, June 25th, 1995']").click();
-        $("#subjectsInput").setValue("Computer science").pressEnter();
+        $("#subjectsInput").setValue("Com").pressEnter();
         $("#currentAddress").setValue("Baumana 10");
         $("#state").click();
         $(byText("NCR")).click();
